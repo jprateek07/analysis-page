@@ -14,18 +14,19 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
     <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/themes/dark.js"></script>
     <script src="https://cdn.amcharts.com/lib/4/themes/spiritedaway.js"></script>
     <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
 </head>
 
 <body>
-    <h1>Feedback page</h1>
-    <div class="container" id="doughnuts">
+    <h1 class="py-md-4">Feedback page</h1>
+    <div class="container py-md-4" id="doughnuts">
         <div class="row">
             <div class="col-md-6">
                 <div class="boundary">
                     <div class="circle">
-                        <h1>60/100</h1>
+                        <h1><b>EARLY: </b>70/100</h1>
                     </div>
                     <div class="doughnut">
                         <div id="chartContainer1" style="height: 240px; width: 100%;"></div>
@@ -35,13 +36,168 @@
             <div class="col-md-6">
                 <div class="boundary">
                     <div class="circle">
-                        <h1>60/100</h1>
+                        <h1><b>NOW: </b>60/100</h1>
                     </div>
                     <div class="doughnut">
                         <div id="chartContainer2" style="height: 240px; width: 100%;"></div>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+    <h1 class="mt-md-5">Sentimental Trajectory</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 mx-auto">
+                <div class="boundary">
+                    <div class="graphs mt-md-3 mb-md-5" id="chartdiv"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="question-sections my-md-3">
+        <h1 class="text-center">Questions & Answers</h1>
+        <div class="good-questions">
+            <h4>GOOD</h4>
+            <div class="container py-3">
+                <div class="row">
+                    <div class="col-12 mx-auto">
+                        <div class="accordion" id="faqExample">
+                            <div class="card">
+                                <div class="card-header p-2" id="goodquestion1">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOneGood" aria-expanded="true" aria-controls="collapseOneGood">
+                                            Q: What is your question?
+                                        </button>
+                                      </h5>
+                                </div>
+            
+                                <div id="collapseOneGood" class="collapse show" aria-labelledby="goodquestion1" data-parent="#faqExample">
+                                    <div class="card-body">
+                                        <b>Answer:</b> The answer to the goodquestion can go here.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header p-2" id="goodquestion2">
+                                    <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwoGood" aria-expanded="false" aria-controls="collapseTwoGood">
+                                        Q: What is your question?
+                                    </button>
+                                  </h5>
+                                </div>
+                                <div id="collapseTwoGood" class="collapse" aria-labelledby="goodquestion2" data-parent="#faqExample">
+                                    <div class="card-body">
+                                        <b>Answer:</b> The answer to the goodquestion can go here.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header p-2" id="goodquestion3">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThreeGood" aria-expanded="false" aria-controls="collapseThreeGood">
+                                            Q: What is your question?
+                                        </button>
+                                      </h5>
+                                </div>
+                                <div id="collapseThreeGood" class="collapse" aria-labelledby="goodquestion3" data-parent="#faqExample">
+                                    <div class="card-body">
+                                        <b>Answer:</b> The answer to the goodquestion can go here.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header p-2" id="goodquestion4">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsefourGood" aria-expanded="false" aria-controls="collapsefourGood">
+                                            Q: What is your question?
+                                        </button>
+                                      </h5>
+                                </div>
+                                <div id="collapsefourGood" class="collapse" aria-labelledby="goodquestion4" data-parent="#faqExample">
+                                    <div class="card-body">
+                                        <b>Answer:</b> The answer to the goodquestion can go here.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                    </div>
+                </div>
+                <!--/row-->
+            </div>
+            <!--container-->
+        </div>
+        <div class="bad-questions">
+            <h4>BAD</h4>
+            <div class="container py-3">
+                <div class="row">
+                    <div class="col-12 mx-auto">
+                        <div class="accordion" id="faqExampleBad">
+                            <div class="card">
+                                <div class="card-header p-2" id="badquestion1">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOneBad" aria-expanded="true" aria-controls="collapseOneBad">
+                                            Q: What is your question?
+                                        </button>
+                                      </h5>
+                                </div>
+            
+                                <div id="collapseOneBad" class="collapse show" aria-labelledby="badquestion1" data-parent="#faqExampleBad">
+                                    <div class="card-body">
+                                        <b>Answer:</b> The answer to the goodquestion can go here.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header p-2" id="badquestion2">
+                                    <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwoBad" aria-expanded="false" aria-controls="collapseTwoBad">
+                                      Q: What is your question?
+                                    </button>
+                                  </h5>
+                                </div>
+                                <div id="collapseTwoBad" class="collapse" aria-labelledby="badquestion2" data-parent="#faqExampleBad">
+                                    <div class="card-body">
+                                        <b>Answer:</b> The answer to the goodquestion can go here.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header p-2" id="badquestion3">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThreeBad" aria-expanded="false" aria-controls="collapseThreeBad">
+                                          Q. What is another question?
+                                        </button>
+                                      </h5>
+                                </div>
+                                <div id="collapseThreeBad" class="collapse" aria-labelledby="badquestion3" data-parent="#faqExampleBad">
+                                    <div class="card-body">
+                                        <b>Answer:</b> The answer to the goodquestion can go here.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header p-2" id="badquestion4">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFourBad" aria-expanded="false" aria-controls="collapseFourBad">
+                                          Q. What is the next question?
+                                        </button>
+                                      </h5>
+                                </div>
+                                <div id="collapseFourBad" class="collapse" aria-labelledby="badquestion4" data-parent="#faqExampleBad">
+                                    <div class="card-body">
+                                        <b>Answer:</b> The answer to the goodquestion can go here.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                    </div>
+                </div>
+                <!--/row-->
+            </div>
+            <!--container-->
         </div>
     </div>
 </body>
